@@ -11,3 +11,18 @@ At first, you prepare a credential to access to your private helm repository. It
 ## Reference secret in helmfile.yaml
 
 You can load the secret in `helmfile.yaml` that you generated through `helm-secrets` and refer to it as variables. See [helmfile.yaml](/helmfile.yaml) that refer to secret as `username` and `password` for private helm repository.
+
+```yaml
+repositories:
+  - name: your-own-helm-repo
+    url: https://raw.githubusercontent.com/yourname/sample-helm-repository/main/
+    username: {{ .Environment.Values.username }}
+    password: {{ .Environment.Values.password }}
+
+...
+
+environments:
+  default:
+    secrets:
+      - ./your-own-helm-repository-secrets.yaml
+```

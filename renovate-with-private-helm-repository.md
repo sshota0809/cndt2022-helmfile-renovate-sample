@@ -11,3 +11,17 @@ At first, you prepare a credential to access to your private helm repository. It
 ## Reference secret in helmfile.yaml
 
 You can refer to the secret in `renovate.json` that you generated through `Renovate Encrypt`. See [renovate.json](/renovate.json) that refer to your secrets as `username` and `encrypted.password` for private helm repository.
+
+```json
+  "hostRules": [
+    {
+      "hostName": "https://raw.githubusercontent.com/yourname/sample-helm-repository/main/",
+      "hostType": "helm",
+      "username": "<your username>",
+      "encrypted": {
+        "password": "<encrypted password through Renovate Encrypt>"
+      }
+    }
+  ],
+...
+```
