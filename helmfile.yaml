@@ -1,0 +1,16 @@
+repositories:
+  - name: your-own-helm-repo
+    url: https://raw.githubusercontent.com/yourname/sample-helm-repository/main/
+    username: {{ .Environment.Values.username }}
+    password: {{ .Environment.Values.password }}
+
+releases:
+  - name: sample
+    namespace: sample-namespace
+    chart: your-own-helm-repo/sample-application
+    version: 1.0.0
+
+environments:
+  default:
+    secrets:
+      - ./your-own-helm-repository-secrets.yaml
