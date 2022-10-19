@@ -6,7 +6,7 @@ You can build your own private helm repository. See [The Chart Repository Guid](
 
 ## Generate encrypted credential by Renovate Encrypt
 
-At first, you prepare a credential to access to your private helm repository. It may be your personal GitHub access token or other. Once you prepare it you can encrypt it through [Renovate Encrypt](https://app.renovatebot.com/encrypt). you put your `Organization`, `Repository` and `Raw Password Value` into box and click `Encrypt` button.
+At first, you prepare a credential to access to your private helm repository. It may be your personal GitHub access token or other. Once you prepare it you can encrypt it through [Renovate Encrypt](https://app.renovatebot.com/encrypt). you fill your `Organization`, `Repository` and `Raw Password Value` into box and click `Encrypt` button.
 
 ## Reference secret in helmfile.yaml
 
@@ -23,5 +23,4 @@ You can refer to the secret in `renovate.json` that you generated through `Renov
       }
     }
   ],
-...
 ```
