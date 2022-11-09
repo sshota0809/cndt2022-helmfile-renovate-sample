@@ -1,5 +1,5 @@
 # cndt2022-helmfile-renovate-sample
-This repository has samples for session in CloudNative Days Tokyo 2022.
+This repository has samples for [session at CloudNative Days Tokyo 2022](https://event.cloudnativedays.jp/cndt2022/talks/1509).
 
 # Samples
 
