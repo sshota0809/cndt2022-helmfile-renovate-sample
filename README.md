@@ -1,6 +1,8 @@
 # cndt2022-helmfile-renovate-sample
 This repository has samples for [session at CloudNative Days Tokyo 2022](https://event.cloudnativedays.jp/cndt2022/talks/1509).
 
+* [Slide Link](https://speakerdeck.com/sshota0809/tuo-yan-zi-ke-sasutenahurunakubernetesekosisutemunoguan-li-wositeikutameni)
+
 # Samples
 
 ## Accessing Private Helm Repository
